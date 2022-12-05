@@ -1,3 +1,4 @@
+#terraform to be be init/applied/deleted
 terraform {
   required_providers {
     azurerm = {
