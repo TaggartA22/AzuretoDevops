@@ -11,3 +11,7 @@ terraform {
 provider "azurerm" {
     features {}
 }
+
+data "azurerm_resource_group" "sandbox" {
+  name = "taggarta-sandbox-rg"
+}
