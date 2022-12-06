@@ -8,7 +8,7 @@ resource "azurerm_virtual_network" "vmvnet" {
 resource "azurerm_subnet" "subnet" {
   name                 = "internal"
   resource_group_name  = data.azurerm_resource_group.sandbox.name
-  virtual_network_name = azurerm_virtual_network.vmnet.name
+  virtual_network_name = azurerm_virtual_network.vmvnet.name
   address_prefixes     = ["10.0.2.0/24"]
 }
 

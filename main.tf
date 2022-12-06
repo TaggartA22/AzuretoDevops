@@ -14,5 +14,4 @@ provider "azurerm" {
 
 data "azurerm_resource_group" "sandbox" {
   name = "taggarta-sandbox-rg"
-  location = "UK South"
 }
